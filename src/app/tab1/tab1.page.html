@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Text-to-speech conversion
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Tab 1</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-laber>Enter text:</ion-laber>
+  <ion-input [(ngModel)]="text"></ion-input>
+  <ion-labar>Select speed:</ion-labar>
+  <ion-range min="0.0" max="1.0" step="0.1" [(ngModel)]="range"></ion-range>
+  {{range}} <br>
+  <ion-button (click)="playAudio()">Play</ion-button>
+  <ion-button (click)="stopAudio()">Stop</ion-button>
+
+</ion-content>

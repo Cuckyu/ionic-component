@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Battery status
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Tab 3</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-label>Charge Level:</ion-label>
+  {{charge_level}}
+  <br>
+  <ion-label>Plugged in status:</ion-label>
+  {{plugged_status}}
+  <br>
+  <ion-label id="warn">{{msg}}</ion-label>
+</ion-content>

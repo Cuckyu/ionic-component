@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Call a number
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Tab 2</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-label>Enter a valid phone/mobile number:</ion-label>
+  <ion-input [(ngModel)]="number" type="text"></ion-input>
+  <br>
+  {{number}}
+  <br>
+  <p>Confirmation Message:{{message}}</p>
+  <br>
+  <ion-button (click)="call()">Call</ion-button>
+
+</ion-content>
